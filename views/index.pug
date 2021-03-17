@@ -1,0 +1,31 @@
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no')
+        title PlatziGram
+        // Compiled and minified CSS
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oleo+Script:wght@400;700&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+        link(rel='stylesheet' href='app.css')
+    body
+        section#main-container 
+
+    footer.site-footer
+        .container
+            .row
+                .col.s12.l3.center-aling
+                    // Dropdown Trigger
+                    a.dropdown-trigger.btn.btn-flat(href='#' data-target='dropdown1') Idioma
+                    ul#dropdown1.dropdown-content
+                      li
+                        a(href='#!') Espa&ntilde;ol
+                      li
+                        a(href='#!') Ingl&eacute;s
+                .col.s12.l3.push-l6.center-aling
+                    | © 2016 Platzigram
+      
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+    script(src='index.js')
