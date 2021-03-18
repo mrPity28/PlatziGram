@@ -14,6 +14,5 @@ const port = 3000
 app.listen( port , (err)=>{
     if(err) return console.log('huno un error'), process.exit(1)
 
-
     console.log('platziGram escuchando en el puerto 3000')
 } )

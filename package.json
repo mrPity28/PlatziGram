@@ -19,9 +19,12 @@
   "homepage": "https://github.com/mrPity28/PlatziGram#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "materialize-css": "^1.0.0-rc.2",
     "pug": "^3.0.2"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
   }
 }

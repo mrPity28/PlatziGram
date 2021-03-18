@@ -2,8 +2,8 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const rename = require('gulp-rename')
 
-gulp.task('style',()=>{
-    gulp
+gulp.task('styles',()=>{
+    return gulp
         .src('index.scss')
         .pipe(sass())
         .pipe(rename('app.css'))
@@ -11,9 +11,14 @@ gulp.task('style',()=>{
 })
 
 gulp.task('assets' , ()=>{
-    gulp
+    return gulp
         .src('assets/*')
         .pipe(gulp.dest('public'))
 })
 
-gulp.task('default' , ['styles' , 'assets'])
+// gulp.task('watch', () => {
+//     gulp.watch('app.scss', gulp.series('styles'));
+//     gulp.watch('asset/*', gulp.series('assets'));
+// });
+
+gulp.task('default', gulp.series('styles', 'assets'));
